@@ -1,10 +1,10 @@
 <configuration>
 
-  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%d %green([%thread]) %highlight(%level) %logger{50} - %msg%n</pattern>
-        </encoder>
-    </appender>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{20} (%file:%line\) %msg%n</pattern>
+		</layout>
+	</appender>
 
 	<logger name="edu.stanford.nlp" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />

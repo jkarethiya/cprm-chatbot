@@ -14,8 +14,7 @@ public class StanfordCoreNLPEnglishTestApp {
 
 	public static void main(String[] args) throws IOException {
 		log.info("Test started");
-		String[] englishArgs = new String[] { "-file", "sample-english.txt", "-outputFormat", "text", "-props",
-				"english.properties" };
+		String[] englishArgs = new String[] { "-file", "sample-english.txt", "-outputFormat", "text", "-props", "english.properties" };
 		StanfordCoreNLP.main(englishArgs);
 	}
 }
