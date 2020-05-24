@@ -7,3 +7,6 @@ mvn compile
 
 export MAVEN_OPTS="-Xmx14000m"
 mvn exec:java -Dexec.mainClass="edu.stanford.nlp.StanfordCoreNLPEnglishTestApp"
+
+########################################################################
+
